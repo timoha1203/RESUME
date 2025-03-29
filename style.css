@@ -73,7 +73,7 @@ h3{
     flex-wrap: wrap;
     margin-top: 30px;
     max-width: 60%;
-    min-width: 500px;
+    
     justify-content: space-evenly;
     gap: 30px;
 }
@@ -92,4 +92,15 @@ canvas {
     width: 100vw;
     height: 100%;
     z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Вирівнює елементи у стовпчик */
+        align-items: center; /* Вирівнює по центру */
+        width: 100%;
+    }
+    .contact, .card {
+        width: 90%; /* Розтягує на всю ширину */
+    }
 }
